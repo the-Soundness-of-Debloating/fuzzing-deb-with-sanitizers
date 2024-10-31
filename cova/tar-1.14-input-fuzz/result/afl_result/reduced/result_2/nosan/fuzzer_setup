@@ -1,0 +1,7 @@
+# environment variables:
+AFL_CUSTOM_INFO_PROGRAM=/workspace/fuzzing-deb-with-sanitizers/cova/tar-1.14-input-fuzz/bins/afl_reduced.nosan.out
+AFL_CUSTOM_INFO_PROGRAM_ARGV=xf @@ -C foo ./1/10
+AFL_CUSTOM_INFO_OUT=/workspace/fuzzing-deb-with-sanitizers/cova/tar-1.14-input-fuzz/result/afl_result/reduced/result_2/nosan/default
+AFL_SKIP_CPUFREQ=1
+# command line:
+'afl-fuzz' '-t' '10000+' '-b' '11' '-i' '/workspace/fuzzing-deb-with-sanitizers/cova/tar-1.14-input-fuzz/input/afl_seed/file_5' '-o' '/workspace/fuzzing-deb-with-sanitizers/cova/tar-1.14-input-fuzz/result/afl_result/reduced/result_2/nosan' '--' '/workspace/fuzzing-deb-with-sanitizers/cova/tar-1.14-input-fuzz/bins/afl_reduced.nosan.out' 'xf' '@@' '-C' 'foo' './1/10'

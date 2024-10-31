@@ -1,0 +1,2 @@
+/workspace/fuzzing-deb-with-sanitizers/blade/gzip-1.2.4-input-fuzz/bins/afl_reduced.asan.out
+-c

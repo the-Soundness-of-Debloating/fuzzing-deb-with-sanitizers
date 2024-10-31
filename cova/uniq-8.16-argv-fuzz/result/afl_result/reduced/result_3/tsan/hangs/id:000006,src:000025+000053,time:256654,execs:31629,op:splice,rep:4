@@ -1,0 +1,1 @@
+-f t,d n_ain_iqpu-d -d -0400000000000000000N;0000d train_input/&t

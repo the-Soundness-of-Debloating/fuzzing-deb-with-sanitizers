@@ -1,0 +1,6 @@
+/workspace/fuzzing-deb-with-sanitizers/covf/grep-2.19-input-fuzz/bins/afl_reduced.nosan.out
+a
+-v
+-H
+-r
+@@

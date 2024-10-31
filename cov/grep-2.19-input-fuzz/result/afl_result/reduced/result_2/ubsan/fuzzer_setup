@@ -1,0 +1,8 @@
+# environment variables:
+AFL_CUSTOM_INFO_PROGRAM=/workspace/fuzzing-deb-with-sanitizers/cov/grep-2.19-input-fuzz/bins/afl_reduced.ubsan.out
+AFL_CUSTOM_INFO_PROGRAM_ARGV=1 -h -r @@
+AFL_CUSTOM_INFO_OUT=/workspace/fuzzing-deb-with-sanitizers/cov/grep-2.19-input-fuzz/result/afl_result/reduced/result_2/ubsan/default
+AFL_SKIP_CPUFREQ=1
+AFL_USE_UBSAN=1
+# command line:
+'afl-fuzz' '-C' '-b' '15' '-i' '/workspace/fuzzing-deb-with-sanitizers/cov/grep-2.19-input-fuzz/input/afl_seed/file_2' '-o' '/workspace/fuzzing-deb-with-sanitizers/cov/grep-2.19-input-fuzz/result/afl_result/reduced/result_2/ubsan' '--' '/workspace/fuzzing-deb-with-sanitizers/cov/grep-2.19-input-fuzz/bins/afl_reduced.ubsan.out' '1' '-h' '-r' '@@'

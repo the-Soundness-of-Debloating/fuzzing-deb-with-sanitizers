@@ -1,0 +1,6 @@
+/workspace/fuzzing-deb-with-sanitizers/blade/grep-2.19-input-fuzz/bins/afl_reduced.ubsan.out
+a
+-v
+-H
+-r
+@@

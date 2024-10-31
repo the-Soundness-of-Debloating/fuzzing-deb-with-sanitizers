@@ -1,0 +1,8 @@
+# environment variables:
+AFL_CUSTOM_INFO_PROGRAM=/workspace/fuzzing-deb-with-sanitizers/chisel/bzip2-1.0.5-input-fuzz/bins/afl_reduced.lsan.out
+AFL_CUSTOM_INFO_PROGRAM_ARGV=-f
+AFL_CUSTOM_INFO_OUT=/workspace/fuzzing-deb-with-sanitizers/chisel/bzip2-1.0.5-input-fuzz/result/afl_result/reduced/result_2/lsan/default
+AFL_SKIP_CPUFREQ=1
+AFL_USE_LSAN=1
+# command line:
+'afl-fuzz' '-C' '-b' '10' '-i' '/workspace/fuzzing-deb-with-sanitizers/chisel/bzip2-1.0.5-input-fuzz/input/afl_seed/file_1' '-o' '/workspace/fuzzing-deb-with-sanitizers/chisel/bzip2-1.0.5-input-fuzz/result/afl_result/reduced/result_2/lsan' '--' '/workspace/fuzzing-deb-with-sanitizers/chisel/bzip2-1.0.5-input-fuzz/bins/afl_reduced.lsan.out' '-f'

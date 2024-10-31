@@ -1,0 +1,1 @@
+a -v -H -r tut/input_a -v -H v -H Ar tut/input_-v -H Ar a -v -Ev  -v -H a -

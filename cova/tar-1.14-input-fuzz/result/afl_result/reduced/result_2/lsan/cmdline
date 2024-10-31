@@ -1,0 +1,6 @@
+/workspace/fuzzing-deb-with-sanitizers/cova/tar-1.14-input-fuzz/bins/afl_reduced.lsan.out
+xf
+@@
+-C
+foo
+./1/10

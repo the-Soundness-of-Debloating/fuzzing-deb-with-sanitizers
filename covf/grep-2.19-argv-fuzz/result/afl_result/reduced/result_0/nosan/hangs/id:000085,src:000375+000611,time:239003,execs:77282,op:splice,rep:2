@@ -1,0 +1,1 @@
+M,r train_a  -w n_ -r train_input/input_dir  a -v -44444 G

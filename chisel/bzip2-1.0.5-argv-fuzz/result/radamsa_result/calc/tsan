@@ -1,0 +1,6 @@
+input_0: 	valid_crash_num: 495 	input_total: 500 	valid_crash_rate:  99.00%
+input_1: 	valid_crash_num: 492 	input_total: 500 	valid_crash_rate:  98.40%
+input_2: 	valid_crash_num: 482 	input_total: 500 	valid_crash_rate:  96.40%
+input_3: 	valid_crash_num: 465 	input_total: 500 	valid_crash_rate:  93.00%
+input_4: 	valid_crash_num: 66 	input_total: 500 	valid_crash_rate:  13.20%
+input_5: 	valid_crash_num: 498 	input_total: 500 	valid_crash_rate:  99.60%

@@ -1,0 +1,8 @@
+# environment variables:
+AFL_CUSTOM_MUTATOR_LIBRARY=/workspace/AFLplusplus/custom_mutators/symcc/symcc-mutator.so
+AFL_CUSTOM_INFO_PROGRAM=/workspace/fuzzing-deb-with-sanitizers/covf/bzip2-1.0.5-input-fuzz/bins/afl_reduced.nosan.out
+AFL_CUSTOM_INFO_PROGRAM_ARGV=-d
+AFL_CUSTOM_INFO_OUT=/workspace/fuzzing-deb-with-sanitizers/covf/bzip2-1.0.5-input-fuzz/result/symcc_result/reduced/result_1/nosan/default
+AFL_SKIP_CPUFREQ=1
+# command line:
+'afl-fuzz' '-b' '11' '-i' '/workspace/fuzzing-deb-with-sanitizers/covf/bzip2-1.0.5-input-fuzz/input/afl_seed/file_2' '-o' '/workspace/fuzzing-deb-with-sanitizers/covf/bzip2-1.0.5-input-fuzz/result/symcc_result/reduced/result_1/nosan' '--' '/workspace/fuzzing-deb-with-sanitizers/covf/bzip2-1.0.5-input-fuzz/bins/afl_reduced.nosan.out' '-d'

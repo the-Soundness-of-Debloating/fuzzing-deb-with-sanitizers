@@ -1,0 +1,7 @@
+# environment variables:
+AFL_CUSTOM_INFO_PROGRAM=/workspace/fuzzing-deb-with-sanitizers/chisel/gzip-1.2.4-input-fuzz/bins/afl_reduced.nosan.out
+AFL_CUSTOM_INFO_PROGRAM_ARGV=-c
+AFL_CUSTOM_INFO_OUT=/workspace/fuzzing-deb-with-sanitizers/chisel/gzip-1.2.4-input-fuzz/result/afl_result/reduced/result_0/nosan/default
+AFL_SKIP_CPUFREQ=1
+# command line:
+'afl-fuzz' '-b' '3' '-i' '/workspace/fuzzing-deb-with-sanitizers/chisel/gzip-1.2.4-input-fuzz/input/afl_seed/file_0' '-o' '/workspace/fuzzing-deb-with-sanitizers/chisel/gzip-1.2.4-input-fuzz/result/afl_result/reduced/result_0/nosan' '--' '/workspace/fuzzing-deb-with-sanitizers/chisel/gzip-1.2.4-input-fuzz/bins/afl_reduced.nosan.out' '-c'

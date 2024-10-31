@@ -1,0 +1,8 @@
+# environment variables:
+AFL_CUSTOM_INFO_PROGRAM=/workspace/fuzzing-deb-with-sanitizers/covf/chown-8.2-argv-fuzz/bins/afl_reduced.ubsan.out
+AFL_CUSTOM_INFO_PROGRAM_ARGV=
+AFL_CUSTOM_INFO_OUT=/workspace/fuzzing-deb-with-sanitizers/covf/chown-8.2-argv-fuzz/result/afl_result/reduced/result_2/ubsan/default
+AFL_SKIP_CPUFREQ=1
+AFL_USE_UBSAN=1
+# command line:
+'afl-fuzz' '-b' '13' '-i' '/workspace/fuzzing-deb-with-sanitizers/covf/chown-8.2-argv-fuzz/input/afl_seed/input_2' '-o' '/workspace/fuzzing-deb-with-sanitizers/covf/chown-8.2-argv-fuzz/result/afl_result/reduced/result_2/ubsan' '/workspace/fuzzing-deb-with-sanitizers/covf/chown-8.2-argv-fuzz/bins/afl_reduced.ubsan.out'

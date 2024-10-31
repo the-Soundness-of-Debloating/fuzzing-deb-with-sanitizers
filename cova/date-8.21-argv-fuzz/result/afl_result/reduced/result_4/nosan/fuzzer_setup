@@ -1,0 +1,6 @@
+# environment variables:
+AFL_CUSTOM_INFO_PROGRAM=/workspace/fuzzing-deb-with-sanitizers/cova/date-8.21-argv-fuzz/bins/afl_reduced.nosan.out
+AFL_CUSTOM_INFO_PROGRAM_ARGV=
+AFL_CUSTOM_INFO_OUT=/workspace/fuzzing-deb-with-sanitizers/cova/date-8.21-argv-fuzz/result/afl_result/reduced/result_4/nosan/default
+# command line:
+'afl-fuzz' '-b' '4' '-i' '/workspace/fuzzing-deb-with-sanitizers/cova/date-8.21-argv-fuzz/input/afl_seed/input_4' '-o' '/workspace/fuzzing-deb-with-sanitizers/cova/date-8.21-argv-fuzz/result/afl_result/reduced/result_4/nosan' '/workspace/fuzzing-deb-with-sanitizers/cova/date-8.21-argv-fuzz/bins/afl_reduced.nosan.out'

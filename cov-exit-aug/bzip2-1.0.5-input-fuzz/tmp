@@ -1,0 +1,1 @@
+++ timeout -k 0.5 0.5 /workspace/fuzzing-deb-with-sanitizers/cov-aug-0919/bzip2-1.0.5-input-fuzz/bins/reduced.ubsan.out -f /workspace/fuzzing-deb-with-sanitizers/cov-aug-0919/bzip2-1.0.5-input-fuzz/result/afl_result/reduced/result_2/ubsan/crashes/id:000008,sig:04,src:000018,time:38455747,execs:25176271,op:havoc,rep:3.bz2

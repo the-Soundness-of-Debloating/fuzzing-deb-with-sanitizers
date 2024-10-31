@@ -1,0 +1,5 @@
+/workspace/fuzzing-deb-with-sanitizers/cov/grep-2.19-input-fuzz/bins/afl_reduced.asan.out
+1
+-h
+-r
+@@

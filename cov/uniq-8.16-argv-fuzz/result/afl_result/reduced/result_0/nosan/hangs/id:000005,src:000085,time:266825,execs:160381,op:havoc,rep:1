@@ -1,0 +1,1 @@
+train_input/file/input -di @0 ‘= r -f 10 _np 10 tr -- 1

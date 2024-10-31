@@ -1,0 +1,4 @@
++ timeout -k 0.5 0.5 /workspace/fuzzing-deb-with-sanitizers/cov-aug-0919/chown-8.2-argv-fuzz/bins/reduced.ubsan.out
+argv-fuzz-inl.h:30:5: runtime error: index 1000 out of bounds for type 'char *[1000]'
+SUMMARY: UndefinedBehaviorSanitizer: undefined-behavior argv-fuzz-inl.h:30:5 in 
+./chown: invalid option -- ':'

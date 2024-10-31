@@ -1,0 +1,1 @@
+-f 10 t train_inp 100010 -d 10 ut/fil-w 10 tr

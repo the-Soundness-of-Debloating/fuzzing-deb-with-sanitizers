@@ -1,0 +1,1 @@
+-H -train_ina -v -H -r traina -v -Ha -v -I -r train_input/input_dir -r train
