@@ -4,7 +4,11 @@ This repo contains all the files and scripts needed from **Step 2  - Soundness I
 ## Installation
 ### Solution 1: Pull the docker image we prepared
 ```
-docker pull ****************
+docker pull debsoundness/deb_env
+docker run -it debsoundness/deb_env /bin/bash
+
+# inside the docker container
+git clone https://github.com/the-Soundness-of-Debloating/fuzzing-deb-with-sanitizers
 ```
 
 ### Solution 2: Manual installation
@@ -36,14 +40,14 @@ Follow the instructions in [custom_mutators_symcc](https://github.com/AFLplusplu
 │   │   │   ├── afl_result               # AFL++ test results
 │   │   │   │   └── reduced              # AFL++ test results on the debloated program
 │   │   │   │       ├── result_0         # Test results for seed_0 (each subfolder corresponds to results under 6 different sanitizers)
-│   │   │   │       │   ├── asan         
+│   │   │   │       │   ├── asan
 │   │   │   │       │   ├── lsan
 │   │   │   │       │   ├── msan
 │   │   │   │       │   ├── nosan
 │   │   │   │       │   ├── tsan
 │   │   │   │       │   └── ubsan
 │   │   │   │       ├── result_1         # Test results for seed_1 (same subdirectory structure as result_0)
-│   │   │   │       └── ....... 
+│   │   │   │       └── .......
 │   │   │   ├── radamsa_result           # Radamsa test results
 │   │   │   │   ├── origin               # Results of each fuzz input on the original program
 │   │   │   │   └── reduced              # Results of each fuzz input on the debloated program
@@ -66,9 +70,9 @@ Follow the instructions in [custom_mutators_symcc](https://github.com/AFLplusplu
 ```
 
 ## How to fuzz
-Take the fuzzing of `bzip2-1.0.5` program debloated by `blade` in the `argv-fuzz` manner as an example: 
+Take the fuzzing of `bzip2-1.0.5` program debloated by `blade` in the `argv-fuzz` manner as an example:
 ```
-cd blade/bzip2-1.0.5-argv-fuzz 
+cd blade/bzip2-1.0.5-argv-fuzz
 ```
 
 ### Run AFL++
@@ -80,7 +84,7 @@ bash -x ./afl_auto_test.sh reduced [sanitizer] [start_seed_num] [end_seed_num] [
 * [end_seed_num]: the end index of seeds you want to use
 * [cpu_id]: the index of your available cpu core
 
-For example, if you only want to run AFL++ using seed_2 with the help of memory sanitizer in your 3rd cpu core, you should run: 
+For example, if you only want to run AFL++ using seed_2 with the help of memory sanitizer in your 3rd cpu core, you should run:
 ```
 bash -x ./afl_auto_test.sh reduced msan 2 2 3
 ```
@@ -100,7 +104,7 @@ As SymCC does not support sanitizer-guided symbolic execution, you do not have t
 As Radamsa is only capable of generating the fuzzed inputs, we separated its fuzzed input generation from using it to perfrom fuzz testing.
 
 #### Fuzzed input generation
-We retained all the minimized seed corpus in corresponding directory in the `chisel` folder. 
+We retained all the minimized seed corpus in corresponding directory in the `chisel` folder.
 
 So you should enter the `chisel/xxx/input/radamsa_fuzzed` folder to generate Radamsa-fuzzed inputs.
 ```
@@ -112,7 +116,7 @@ popd
 #### Perform Radamsa-based fuzz testing
 As running Radamsa-based fuzz testing is much like the process of validation, we merged this step into the script for the validation step.
 
-You can skip this step, or solely run this step as following: 
+You can skip this step, or solely run this step as following:
 ```
 # in the blade/bzip2-1.0.5-argv-fuzz folder
 bash -x ./verify.sh radamsa [sanitizer] save [out_dir]
